@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Inter';
     src: url('./fonts/Inter-Regular.woff2') format('woff2'),
       url('./fonts/Inter-Regular.woff') format('woff');
@@ -67,7 +67,7 @@
     font-size: 10px;
     margin-bottom: -2px;
     color: darkgrey;
-  }
+  } */
   
   .botones {
     display: flex;
@@ -94,7 +94,7 @@
   
   
   
-  
+  /* 
   .cuadro {
     padding: 30px 1px;
   }
@@ -151,4 +151,4 @@
       margin: 5px;
   }
   
-  }
+  } */

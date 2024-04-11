@@ -1,13 +1,15 @@
 import React from 'react'
 import './Card.css'
-
 import UserDetails from './UserDetails'
 import ButtonSection from './ButtonSection'
 
-const Card = () => {
+function Card(props) {
+    const user = props.user
+    console.log(user)
+
     return (
         <div className="cuadro">
-            <UserDetails />
+            {/* <UserDetails user={user}/> */}
             <ButtonSection />
         </div>
     )
