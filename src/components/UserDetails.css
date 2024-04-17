@@ -1,18 +1,19 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter-Regular.woff2') format('woff2'),
-      url('./fonts/Inter-Regular.woff') format('woff');
-    font-style: normal;
-  }
-  
-  :root {
-    --White: hsl(0, 0%, 100%);
-    --Grey: hsl(0, 0%, 20%);
-    --DarkGrey: hsl(0, 0%, 12%);
-    --Off-Black: hsl(0, 0%, 8%);
-    --Green: hsl(75, 94%, 57%);
-  }
-  /* 
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.woff2') format('woff2'),
+    url('./fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+
+/* 
   body {
     font-family: 'Inter';
     margin: 0;
@@ -21,7 +22,7 @@
     justify-content: center;
     background-color: var(--Off-Black);
   } */
-  
+
 /*   .cuadro {
     display: flex;
     flex-direction: column;
@@ -33,44 +34,53 @@
     margin: 100px auto;
     border-radius: 20px;
   } */
-  
-  .Imagen img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    
-  }
-  
-  .titulo {
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--White);
-  }
-  
-  .titulo h2 {
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: -10px;
-  }
-  
-  .titulo h4 {
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    margin-bottom: 30px;
-    color: var(--Green);
-  }
-  
-  .titulo p {
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    margin-bottom: -2px;
-    color: darkgrey;
-  }
-  
- /*  .botones {
+
+.Imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  /* ajusta según sea necesario */
+}
+
+.Imagen img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* esto asegurará que la imagen mantenga su relación de aspecto */
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--White);
+}
+
+.titulo h2 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.titulo h4 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 30px;
+  color: var(--Green);
+}
+
+.titulo p {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: -2px;
+  color: darkgrey;
+}
+
+/*  .botones {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;

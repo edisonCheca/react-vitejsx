@@ -1,4 +1,3 @@
-
 import "./UserDetails.css";
 import avatarJessica from '../assets/avatar-jessica.jpeg'
 
