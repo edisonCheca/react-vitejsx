@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react'
+
 import "./UserDetails.css";
-/* import avatarJessica from '../assets/avatar-jessica.jpeg' */
+import avatarJessica from '../assets/avatar-jessica.jpeg'
 
 const UserDetails = (props) => {
-    const [user, setUser] = useState({})
-    setUser(props.user)
+    const user = props.user;
+    
 
 
     return (
         <div>
             <div className="Imagen">
-                <img src={user.avatar} alt={`avatar de ${user.name}`}/>
+                <img src={user.avatar} alt={`avatar de ${user.name}`} />
             </div>
             <div className="titulo">
                 <h2>{user.name}</h2>
