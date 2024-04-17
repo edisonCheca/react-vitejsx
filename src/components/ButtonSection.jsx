@@ -1,21 +1,19 @@
-import React from 'react'
+// ButtonSection.js
+import React from 'react';
 import "./ButtonSection.css";
 
 const ButtonSection = ({ socialLinks }) => {
-    console.log(socialLinks)
     return (
         <div>
-            <div className="botones">
+           {/*  <div className="botones">
                 {
                     socialLinks.map(
                         socialLink => <button key={socialLink.name}>{socialLink.name}</button>
                     )
                 }
-
-
-            </div>
-        </div>
+            </div> */}
+        </div> 
     )
 }
 
-export default ButtonSection
+export default ButtonSection;

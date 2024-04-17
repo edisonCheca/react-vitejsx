@@ -1,24 +1,20 @@
+// UserDetails.js
+import React from "react";
 import "./UserDetails.css";
-import avatarJessica from '../assets/avatar-jessica.jpeg'
 
-const UserDetails = (props) => {
-    const user = props.user;
-    
-
-
+const UserDetails = ({ character }) => {
     return (
         <div>
             <div className="Imagen">
-                <img src={user.avatar} alt={`avatar de ${user.name}`} />
+                <img src={character.image} alt={`avatar de ${character.name}`} />
             </div>
             <div className="titulo">
-                <h2>{user.name}</h2>
-                <h4>{user.location}</h4>
-                <p>{user.description}</p>
+                <h2>{character.name}</h2>
+                <h4>{character.gender}</h4>
+                <p>{character.species}</p>
             </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default UserDetails
+export default UserDetails;

@@ -1,28 +1,44 @@
-import React, { useEffect, useState } from 'react';
+// App.js
+import { useEffect, useState } from 'react';
 import Card from './components/Card';
 import './App.css';
 
 function App() {
-  const [users, setUsers] = useState([]);
+  const [characters, setCharacters] = useState([]);
+
   useEffect(() => {
-    fetch('https://661038330640280f219c9a89.mockapi.io/socia-profile/v1/users')
-      .then(res => {
-        return res.json();
-      }).then(data => {
-        setUsers(data)
-        console.log(data)
+    const generateRandomNumbers = () => {
+      const numbers = [];
+      while (numbers.length < 10) {
+        const randomNum = Math.floor(Math.random() * 826) + 1;
+        if (!numbers.includes(randomNum)) {
+          numbers.push(randomNum);
+        }
+      }
+      return numbers;
+    };
+
+    const randomIds = generateRandomNumbers();
+
+    Promise.all(randomIds.map(id => fetch(`https://rickandmortyapi.com/api/character/${id}`)
+      .then(res => res.json())))
+      .then(data => {
+        setCharacters(data);
+      })
+      .catch(error => {
+        console.error('Error fetching characters:', error);
       });
   }, []);
-  return (
-    <>
-      <div>
-        {
-          users.map((user) => (<Card key={user.id} user={user} />))
-        }
-      </div>
-    </>
 
-  )
+  return (
+    <div className="App">
+      <div className="characters">
+        {characters.map((character) => (
+          <Card key={character.id} character={character} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
