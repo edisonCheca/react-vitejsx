@@ -1,4 +1,3 @@
-// UserDetails.js
 import React from "react";
 import "./UserDetails.css";
 
@@ -10,8 +9,8 @@ const UserDetails = ({ character }) => {
             </div>
             <div className="titulo">
                 <h2>{character.name}</h2>
-                <h4>{character.gender}</h4>
-                <p>{character.species}</p>
+                <h4>{character.species}</h4>
+                <p>{character.gender} {character.status}</p>
             </div>
         </div>
     );

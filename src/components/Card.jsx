@@ -7,7 +7,7 @@ import './Card.css';
 const Card = (props) => {
     const character = props.character;
     return (
-        <div className="cuadro">
+        <div className="container">
             <UserDetails character={character} />
             <ButtonSection />
         </div>
