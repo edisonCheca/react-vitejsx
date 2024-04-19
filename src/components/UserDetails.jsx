@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import "./UserDetails.css";
 
 const UserDetails = ({ character }) => {
@@ -16,4 +16,4 @@ const UserDetails = ({ character }) => {
     );
 };
 
-export default UserDetails;
+export default UserDetails; */

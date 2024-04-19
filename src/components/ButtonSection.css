@@ -1,24 +1,23 @@
-  .botones {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    flex-direction: column;
-  }
-  
-  .botones button {
-    padding: 15px 40px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--Grey);
-    color: var(--White);
-    cursor: pointer;
-  }
-  
-  .botones button:hover {
-    background-color: var(--Green);
-    color: var(--DarkGrey);
-  }
-  
-  
-  
- 
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.botones button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Grey);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: var(--Green);
+  color: var(--DarkGrey);
+}
+
+
+

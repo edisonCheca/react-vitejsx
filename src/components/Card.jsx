@@ -1,5 +1,4 @@
-// Card.js
-import React from 'react';
+/* import React from 'react';
 import UserDetails from './UserDetails';
 import ButtonSection from './ButtonSection';
 import './Card.css';
@@ -14,4 +13,4 @@ const Card = (props) => {
     )
 }
 
-export default Card;
+export default Card; */
