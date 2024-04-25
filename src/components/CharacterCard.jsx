@@ -8,7 +8,7 @@ const card = (props) => {
   const character = props.character;
   const socialLinks=character["social-links"];
   return (
-    <div className="cuadro">
+    <div className="container_char">
       {<CharacterDatails character={character}/>}
       {<CharacterEpisode/>}
       <CharacterButton socialLinks={socialLinks}/>

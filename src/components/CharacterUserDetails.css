@@ -1,8 +1,8 @@
-.titulo{
+.titulo_char{
   /* background-color: blue; */
   text-align: center;
 }
-.Imagen {
+.Imagen_char {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   margin: 200px;
 
 }
-.Imagen img{
+.Imagen_char img{
   width: 600px;
   height: 500px;
 }

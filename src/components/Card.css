@@ -1,16 +1,23 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: auto;
   width: 300px;
   background-color: var(--DarkGrey);
-  margin: 500px auto;
+  margin: 40px;
   border-radius: 20px;
-  
+  border-image: linear-gradient(to right, var(--Grey), var(--DarkGrey)); /* Gradiente lineal */
+  transition: border-image 0.3s ease; 
 }
 
+.container :hover{
+  border-image: linear-gradient(to right, var(--White), var(--LightGrey));
+
+}
+
+/* 
 .nuevoContainer {
   display: flex;
   flex-direction: column;
@@ -26,7 +33,8 @@
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease;
-  overflow: hidden; /* Limita el contenido visible al interior del contenedor */
+  overflow: hidden; 
   position: relative;
 
 }
+ */

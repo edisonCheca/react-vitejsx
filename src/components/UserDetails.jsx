@@ -1,5 +1,6 @@
-/* import React from "react";
+import React from "react";
 import "./UserDetails.css";
+
 
 const UserDetails = ({ character }) => {
     return (
@@ -16,4 +17,4 @@ const UserDetails = ({ character }) => {
     );
 };
 
-export default UserDetails; */
+export default UserDetails;
